@@ -14,7 +14,7 @@ COPY . /src
 WORKDIR /src
 
 # Install dependencies
-RUN  pip3 install .
+RUN  pip3 install pip -U .
 
 WORKDIR /src/src/phone
 
