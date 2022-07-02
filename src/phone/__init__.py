@@ -13,7 +13,7 @@ def _phone_format(num: str) -> str:
     return f"8 ({num[1:4]}) {num[4:7]}-{num[7:9]}-{num[9:11]}"
 
 
-def phone(raw_number: str) -> str:
+def get_formatted_phone(raw_number: str) -> str:
     """Return correct phone number."""
     raw_number = _numbers_from_raw_string(raw_number)
     logging.debug(f"Input value {raw_number!r}")
@@ -40,4 +40,4 @@ def _numbers_from_raw_string(raw_number: str) -> str:
 
 
 if __name__ == '__main__':
-    phone('slkfjlsfjsdfj2342424ljl')
+    get_formatted_phone('slkfjlsfjsdfj2342424ljl')

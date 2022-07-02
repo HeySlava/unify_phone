@@ -1,6 +1,6 @@
 import pytest
 
-from phone import phone
+from phone import get_formatted_phone
 from phone import _numbers_from_raw_string
 
 
@@ -17,7 +17,7 @@ from phone import _numbers_from_raw_string
             ("(123) 456 78 91", "1234567891")
         ])
 def test_phone(raw_number, expected):
-    assert phone(raw_number) == expected
+    assert get_formatted_phone(raw_number) == expected
 
 
 @pytest.mark.parametrize(
