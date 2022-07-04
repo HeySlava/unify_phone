@@ -1,19 +1,14 @@
-# Test web-app to use with Pluralsight courses and Docker Deep Dive book
-# Linux x64
 FROM python:3.10-alpine
 
-LABEL maintainer="vyackapitonov"
+LABEL maintainer="Vyacheslav Kapitonov"
+LABEL email="vyach.kapitonov@gmail.com"
 
-# Install Node and NPM
-RUN apk add py3-pip
+RUN apk add --no-cache py3-pip
 
-# Copy app to /src
-# unify-phone-from-json
 COPY . /src
 
 WORKDIR /src
 
-# Install dependencies
 RUN  pip3 install pip -U .
 
 WORKDIR /src/src/phone
