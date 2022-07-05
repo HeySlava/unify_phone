@@ -64,6 +64,7 @@ https://kapitonov.tech/unify_phone_from_json
 
 #### Микросервис обрабатывает HTTP GET запросы по адресу `/unify_phone_from_query`  и принимает телефон query параметре.
 ![alter text](https://kapitonov.tech/img/75e2de01d59757d.png)
+#### [Ссылка из скриншота](https://kapitonov.tech/unify_phone_from_query?phone=8900some+random1234523)
 ---
 
 #### Микросервис обрабатывает HTTP GET запросы по адресу `/unify_phone_from_cookies` и принимает телефон в Cookie записи `phone`.
